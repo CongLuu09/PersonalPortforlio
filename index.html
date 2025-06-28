@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu Viết Công - Mobile Developer Portfolio</title>
+    <meta name="description" content="Portfolio của Lưu Viết Công - Mobile Developer chuyên Flutter, React Native và Android Development">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Lưu Viết Công</h1>
+                    <span class="logo-subtitle">Mobile Developer</span>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#hero" class="nav-link">Giới thiệu</a></li>
+                        <li><a href="#projects" class="nav-link">Dự án</a></li>
+                        <li><a href="#about" class="nav-link">Về tôi</a></li>
+                        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                        <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <!-- Hero Tầng 1 -->
+            <div class="hero-main">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="greeting">
+                            <span class="greeting-text">Xin chào, tôi là</span>
+                            <div class="status-badge">
+                                <span class="status-dot"></span>
+                                Sẵn sàng làm việc
+                            </div>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="name-highlight">Lưu Viết Công</span>
+                        </h1>
+                        
+                        <p class="hero-role">Mobile Developer & Cross-Platform Enthusiast</p>
+                        
+                        <p class="hero-description">
+                            Lập trình viên mobile trẻ với nền tảng Java vững chắc, đang mở rộng sang Flutter và React Native. 
+                            Đam mê tạo ra những ứng dụng di động có trải nghiệm người dùng tuyệt vời và kiến trúc code sạch.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Dự án đang phát triển</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">Intern</span>
+                                <span class="stat-label">Kinh</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Đam mê công nghệ</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i>
+                                Xem dự án
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i class="fas fa-paper-plane"></i>
+                                Liên hệ
+                            </a>
+                            <button class="btn btn-ghost" id="hero-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                                <span class="toggle-text">Tìm hiểu thêm</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="profile-container">
+                            <div class="profile-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Lưu Viết Công" />
+                            </div>
+                            <div class="floating-icons">
+                                <div class="floating-icon icon-1"><i class="fab fa-java"></i></div>
+                                <div class="floating-icon icon-2"><i class="fab fa-android"></i></div>
+                                <div class="floating-icon icon-3"><i class="fab fa-react"></i></div>
+                                <div class="floating-icon icon-4"><i class="fas fa-mobile-alt"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Tầng 2 - Chi tiết -->
+            <div class="hero-detail" id="hero-detail">
+                <div class="detail-content">
+                    <div class="journey-section">
+                        <h3><i class="fas fa-route"></i> Hành trình phát triển</h3>
+                        <div class="journey-grid">
+                            <div class="journey-item">
+                                <div class="journey-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Nền tảng vững chắc</h4>
+                                <p>Bắt đầu với Java, học cách tư duy lập trình và xây dựng kiến trúc code sạch. Hiểu sâu về OOP và design patterns.</p>
+                            </div>
+                            
+                            <div class="journey-item">
+                                <div class="journey-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>Chuyển sang Mobile</h4>
+                                <p>Khám phá thế giới mobile development, từ Android XML UI đến Flutter. Học cách tối ưu UX/UI cho thiết bị di động.</p>
+                            </div>
+                            
+                            <div class="journey-item">
+                                <div class="journey-icon">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <h4>Cross-Platform Vision</h4>
+                                <p>Đang mở rộng sang Flutter và React Native để tạo ra những ứng dụng đa nền tảng hiệu quả và nhất quán.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="strengths-section">
+                        <h3><i class="fas fa-star"></i> Điểm mạnh cốt lõi</h3>
+                        <div class="strengths-list">
+                            <div class="strength-item">
+                                <i class="fas fa-brain"></i>
+                                <div class="strength-content">
+                                    <h4>Tư duy End-to-End</h4>
+                                    <p>Từ ý tưởng đến sản phẩm hoàn chỉnh: phân tích yêu cầu, thiết kế UI/UX, code implementation và testing.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item">
+                                <i class="fas fa-book-open"></i>
+                                <div class="strength-content">
+                                    <h4>Khả năng tự học nhanh</h4>
+                                    <p>Chủ động nghiên cứu công nghệ mới, đọc documentation và áp dụng vào dự án thực tế một cách hiệu quả.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item">
+                                <i class="fas fa-palette"></i>
+                                <div class="strength-content">
+                                    <h4>Chú trọng UX/UI</h4>
+                                    <p>Hiểu rằng code tốt phải đi kèm với trải nghiệm người dùng tuyệt vời. Luôn tối ưu giao diện và tương tác.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="strength-item">
+                                <i class="fas fa-cogs"></i>
+                                <div class="strength-content">
+                                    <h4>Kiến thức nền vững</h4>
+                                    <p>Nắm vững các nguyên lý cơ bản: data structures, algorithms, OOP và software engineering principles.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Dự án</span>
+                <h2 class="section-title">Dự án tiêu biểu</h2>
+                <p class="section-subtitle">3 dự án thể hiện khả năng phát triển ứng dụng mobile end-to-end</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Sleep Sound -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=300&fit=crop" alt="Sleep Sound App" />
+                        <div class="project-overlay">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">XML</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">TypeScript</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Sleep Sound</h3>
+                            <span class="project-duration">Tháng 5/2025 - nay</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Ứng dụng thư giãn với âm thanh thiên nhiên, kết hợp dashboard quản trị để theo dõi thống kê người dùng. 
+                            Tự thiết kế kiến trúc từ UI/UX đến backend logic.
+                        </p>
+                        
+                        <div class="project-role">
+                            <strong>Vai trò:</strong> Full-stack Mobile Developer
+                        </div>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tự xây dựng kiến trúc app từ đầu</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tích hợp audio streaming mượt mà</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Dashboard analytics trực quan</span>
+                            </div>
+                        </div>
+                        
+                        <a href="sleep-sound.html" class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Student Manager -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop" alt="Student Manager App" />
+                        <div class="project-overlay">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Student Manager</h3>
+                            <span class="project-duration">Tháng 3 - 4/2024 - nay</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Ứng dụng quản lý lớp học với đầy đủ tính năng CRUD, báo cáo thống kê và giao diện thân thiện. 
+                            Áp dụng design patterns và clean architecture.
+                        </p>
+                        
+                        <div class="project-role">
+                            <strong>Vai trò:</strong> Android Developer & UI/UX Designer
+                        </div>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Clean Architecture với MVVM</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Material Design chuẩn Google</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Báo cáo thống kê trực quan</span>
+                            </div>
+                        </div>
+                        
+                        <a href="student-manager.html" class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Personal Finance -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop" alt="Personal Finance App" />
+                        <div class="project-overlay">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Personal Finance</h3>
+                            <span class="project-duration">Tháng 9 - 12/2024 - nay</span>
+                        </div>
+                        
+                        <p class="project-description">
+                            Ứng dụng quản lý chi tiêu cá nhân với tính năng phân tích thông minh, đồng bộ cloud và giao diện hiện đại. 
+                            Dự án đầu tiên với React Native và TypeScript.
+                        </p>
+                        
+                        <div class="project-role">
+                            <strong>Vai trò:</strong> Cross-Platform Developer
+                        </div>
+                        
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cross-platform iOS & Android</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time sync với Firebase</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI-powered expense categorization</span>
+                            </div>
+                        </div>
+                        
+                        <a href="personal-finance.html" class="btn btn-outline btn-small">
+                            <i class="fas fa-external-link-alt"></i>
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Về tôi</span>
+                <h2 class="section-title">Câu chuyện của tôi</h2>
+                <p class="section-subtitle">Hành trình từ Java developer đến Mobile Cross-Platform Specialist</p>
+            </div>
+            
+            <!-- About Tầng 1 -->
+            <div class="about-main">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Tôi là Lưu Viết Công, một lập trình viên mobile trẻ với niềm đam mê tạo ra những ứng dụng di động có ý nghĩa. 
+                            Bắt đầu từ nền tảng Java vững chắc, tôi đang mở rộng sang Flutter và React Native để trở thành một 
+                            Cross-Platform Developer toàn diện. Với tư duy end-to-end và sự chú trọng đến trải nghiệm người dùng, 
+                            tôi luôn cố gắng tạo ra những sản phẩm không chỉ hoạt động tốt mà còn mang lại giá trị thực tế.
+                        </p>
+                        
+                        <button class="btn btn-ghost" id="about-toggle">
+                            <i class="fas fa-plus"></i>
+                            <span class="toggle-text">Xem thêm</span>
+                        </button>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-number">1000+</span>
+                                    <span class="stat-label">Giờ coding</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-number">3</span>
+                                    <span class="stat-label">Dự án</span>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <span class="stat-number">3+</span>
+                                    <span class="stat-label">Công nghệ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Tầng 2 - Chi tiết -->
+            <div class="about-detail" id="about-detail">
+                <div class="detail-sections">
+                    <div class="detail-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Hành trình học tập</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2021 - 2024</span>
+                                    <h4>Học tập tại trường - Bắt đầu với Java</h4>
+                                    <p>Học các nguyên lý cơ bản của lập trình, OOP và data structures tại trường học. Xây dựng nền tảng vững chắc.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2023 - 2024</span>
+                                    <h4>Làm dự án demo - Chuyển sang Mobile</h4>
+                                    <p>Khám phá Android development, học UI/UX design và database management với SQLite.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot active"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2024 - 2025</span>
+                                    <h4>Học thêm kiến thức - Cross-Platform Journey</h4>
+                                    <p>Mở rộng sang Flutter, React Native và TypeScript. Hướng tới trở thành Full-Stack Mobile Developer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3><i class="fas fa-heart"></i> Triết lý làm việc</h3>
+                        <div class="philosophy-grid">
+                            <div class="philosophy-item">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>User-Centric</h4>
+                                <p>Luôn đặt trải nghiệm người dùng lên hàng đầu. Code tốt phải đi kèm với UX tuyệt vời.</p>
+                            </div>
+                            
+                            <div class="philosophy-item">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <h4>Clean & Maintainable</h4>
+                                <p>Viết code sạch, dễ đọc và dễ bảo trì. Áp dụng design patterns và best practices.</p>
+                            </div>
+                            
+                            <div class="philosophy-item">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Continuous Learning</h4>
+                                <p>Công nghệ thay đổi nhanh, tôi luôn học hỏi và cập nhật kiến thức mới.</p>
+                            </div>
+                            
+                            <div class="philosophy-item">
+                                <div class="philosophy-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4>Collaboration</h4>
+                                <p>Tin rằng teamwork và communication là chìa khóa của những dự án thành công.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3><i class="fas fa-compass"></i> Định hướng phát triển</h3>
+                        <div class="goals-list">
+                            <div class="goal-item">
+                                <div class="goal-timeline">Ngắn hạn (6 tháng)</div>
+                                <div class="goal-content">
+                                    <h4>Master Cross-Platform Development</h4>
+                                    <p>Hoàn thiện kỹ năng Android java, Flutter và React Native, xây dựng thêm 2-3 dự án thực tế với architecture patterns tiên tiến.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <div class="goal-timeline">Trung hạn (1-2 năm)</div>
+                                <div class="goal-content">
+                                    <h4>Full-Stack Mobile Developer</h4>
+                                    <p>Mở rộng sang backend development (Node.js, Firebase), DevOps và CI/CD để trở thành developer toàn diện.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="goal-item">
+                                <div class="goal-timeline">Dài hạn (3-5 năm)</div>
+                                <div class="goal-content">
+                                    <h4>Tech Lead & Mentor</h4>
+                                    <p>Dẫn dắt team development, mentor junior developers và đóng góp vào open-source community.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aspiration">
+                            <div class="aspiration-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="aspiration-content">
+                                <h4>Mong muốn môi trường chuyên nghiệp</h4>
+                                <p>
+                                    Tôi mong muốn được làm việc trong một môi trường chuyên nghiệp, nơi tôi có thể học hỏi từ những senior developers giàu kinh nghiệm, 
+                                    tham gia vào các dự án có tầm ảnh hưởng lớn và đóng góp vào sự phát triển của team. 
+                                    Tôi tin rằng sự kết hợp giữa đam mê cá nhân và môi trường làm việc tốt sẽ tạo ra những sản phẩm xuất sắc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kỹ năng</span>
+                <h2 class="section-title">Công nghệ & Kỹ năng</h2>
+                <p class="section-subtitle">Lộ trình phát triển từ Java foundation đến Cross-Platform mastery</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Mobile Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Mobile Development</h3>
+                            <p>Native & Cross-platform mobile solutions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-flutter"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>Flutter</h4>
+                                    <span class="skill-level intermediate">Learning</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>React Native</h4>
+                                    <span class="skill-level learning">Learning</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>Android XML UI</h4>
+                                    <span class="skill-level intermediate">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Programming Languages</h3>
+                            <p>Core languages và scripting</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>Java</h4>
+                                    <span class="skill-level advanced">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>Dart</h4>
+                                    <span class="skill-level intermediate">Learning</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>TypeScript</h4>
+                                    <span class="skill-level learning">Learning</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>JavaScript</h4>
+                                    <span class="skill-level intermediate">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="category-info">
+                            <h3>Tools & Technologies</h3>
+                            <p>Development tools, databases và cloud services</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>SQLite</h4>
+                                    <span class="skill-level advanced">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fas fa-save"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>SharedPreferences</h4>
+                                    <span class="skill-level advanced">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>Firebase</h4>
+                                    <span class="skill-level learning">Learning</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="50"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="skill-details">
+                                    <h4>HTML/CSS</h4>
+                                    <span class="skill-level basic">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="55"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Liên hệ</span>
+                <h2 class="section-title">Kết nối & Hợp tác</h2>
+                <p class="section-subtitle">Sẵn sàng cho những cơ hội mới và dự án thú vị</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Hãy cùng tạo ra điều gì đó tuyệt vời!</h3>
+                        <p>
+                            Tôi luôn tìm kiếm những cơ hội để học hỏi, phát triển và đóng góp vào những dự án có ý nghĩa. 
+                            Nếu bạn có một ý tưởng thú vị, một dự án cần hỗ trợ, hoặc đơn giản chỉ muốn trò chuyện về công nghệ, 
+                            đừng ngần ngại liên hệ với tôi!
+                        </p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <a href="mailto:cong090503@gmail.com">cong090503@gmail.com</a>
+                                <span class="method-note">Phản hồi trong 24h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/CongLuu09" target="_blank">github.com/CongLuu09</a>
+                                <span class="method-note">Source code & projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability">
+                        <div class="availability-status">
+                            <div class="status-dot"></div>
+                            <span class="status-text">Sẵn sàng cho dự án mới</span>
+                        </div>
+                        <p class="availability-note">
+                            Hiện tại tôi đang tìm kiếm cơ hội thực tập hoặc vị trí Fresher developer 
+                            tại các công ty có môi trường học hỏi tốt và dự án thú vị.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <div class="profile-mini">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Lưu Viết Công" />
+                            </div>
+                            <div class="profile-info">
+                                <h4>Lưu Viết Công</h4>
+                                <p>Mobile Developer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card-content">
+                            <div class="quick-stats">
+                                <div class="quick-stat">
+                                    <span class="stat-label">Kinh nghiệm</span>
+                                    <span class="stat-value">Intern</span>
+                                </div>
+                                <div class="quick-stat">
+                                    <span class="stat-label">Dự án</span>
+                                    <span class="stat-value">3 Phát triển</span>
+                                </div>
+                                <div class="quick-stat">
+                                    <span class="stat-label">Công nghệ</span>
+                                    <span class="stat-value">2+ platforms</span>
+                                </div>
+                            </div>
+                            
+                            <div class="specialties">
+                                <h5>Chuyên môn</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Mobile Development</span>
+                                    <span class="specialty-tag">Cross-Platform</span>
+                                    <span class="specialty-tag">UI/UX Design</span>
+                                    <span class="specialty-tag">Clean Architecture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3>Lưu Viết Công</h3>
+                        <p>Mobile Developer passionate about creating meaningful mobile experiences</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a href="#hero">Giới thiệu</a></li>
+                                <li><a href="#projects">Dự án</a></li>
+                                <li><a href="#about">Về tôi</a></li>
+                                <li><a href="#skills">Kỹ năng</a></li>
+                                <li><a href="#contact">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Projects</h4>
+                            <ul>
+                                <li><a href="sleep-sound.html">Sleep Sound</a></li>
+                                <li><a href="student-manager.html">Student Manager</a></li>
+                                <li><a href="personal-finance.html">Personal Finance</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Connect</h4>
+                            <ul>
+                                <li><a href="mailto:cong090503@gmail.com">Email</a></li>
+                                <li><a href="https://github.com/CongLuu09" target="_blank">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Lưu Viết Công. All rights reserved.</p>
+                    </div>
+                    <div class="footer-slogan">
+                        <p>Designed with <i class="fas fa-heart"></i> for clean & modern mobile experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

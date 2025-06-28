@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager - Chi tiết dự án | Lưu Viết Công</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Lưu Viết Công</h1>
+                    <span class="logo-subtitle">Mobile Developer</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">← Về trang chủ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <div class="container">
+            <div class="project-detail-page">
+                <div class="project-hero">
+                    <div class="project-meta">
+                        <span class="project-category">Android App</span>
+                        <span class="project-status">Đang phát triển</span>
+                    </div>
+                    <h1>Student Manager</h1>
+                    <p class="project-tagline">Ứng dụng quản lý lớp học với kiến trúc MVVM và Material Design</p>
+                </div>
+
+                <div class="project-overview">
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <h3>Thời gian</h3>
+                            <p>Tháng 3 - 4/2024 - nay</p>
+                        </div>
+                        <div class="overview-item">
+                            <h3>Vai trò</h3>
+                            <p>Android Developer & UI/UX Designer</p>
+                        </div>
+                        <div class="overview-item">
+                            <h3>Công nghệ</h3>
+                            <p>Flutter, Flutter SDK, SQLite, MVVM</p>
+                        </div>
+                        <div class="overview-item">
+                            <h3>Platform</h3>
+                            <p>Android</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="project-section">
+                    <h2>Tổng quan dự án</h2>
+                    <p>Student Manager là ứng dụng Android giúp giáo viên quản lý thông tin học sinh, điểm số và theo dõi tiến độ học tập. Ứng dụng được xây dựng với kiến trúc MVVM clean architecture và tuân thủ Material Design guidelines.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Quản lý học sinh</h4>
+                            <p>CRUD operations đầy đủ: thêm, sửa, xóa, tìm kiếm học sinh với validation</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Quản lý điểm số</h4>
+                            <p>Nhập điểm theo môn học, tính điểm trung bình, xếp loại tự động</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-export"></i>
+                            </div>
+                            <h4>Báo cáo thống kê</h4>
+                            <p>Xuất báo cáo PDF, biểu đồ phân tích điểm số, thống kê theo lớp</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Material Design</h4>
+                            <p>Giao diện tuân thủ Material Design 3, responsive và accessible</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Kiến trúc & Design Patterns</h2>
+                    
+                    <div class="architecture-section">
+                        <h4>MVVM Architecture</h4>
+                        <p>Áp dụng Model-View-ViewModel pattern để tách biệt business logic và UI, giúp code dễ test và maintain.</p>
+                        
+                        <div class="architecture-layers">
+                            <div class="layer">
+                                <h5>View Layer</h5>
+                                <p>Activities, Fragments, Custom Views với Data Binding</p>
+                            </div>
+                            <div class="layer">
+                                <h5>ViewModel Layer</h5>
+                                <p>Business logic, state management với LiveData</p>
+                            </div>
+                            <div class="layer">
+                                <h5>Model Layer</h5>
+                                <p>Repository pattern, SQLite database, Data Access Objects</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Thách thức kỹ thuật</h2>
+                    
+                    <div class="challenge-solution">
+                        <div class="challenge">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
+                            <p>Thiết kế database schema phức tạp cho quan hệ nhiều-nhiều giữa học sinh và môn học</p>
+                        </div>
+                        <div class="solution">
+                            <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
+                            <p>Sử dụng junction table và foreign keys, implement DAO pattern với Room database</p>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-solution">
+                        <div class="challenge">
+                            <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
+                            <p>Tối ưu performance cho RecyclerView với dataset lớn và complex layouts</p>
+                        </div>
+                        <div class="solution">
+                            <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
+                            <p>Implement ViewHolder pattern, lazy loading, và DiffUtil for efficient updates</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>UI/UX Design Process</h2>
+                    <div class="design-process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>User Research</h4>
+                                <p>Phỏng vấn giáo viên để hiểu workflow và pain points trong quản lý lớp học</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Wireframing</h4>
+                                <p>Tạo wireframes cho các màn hình chính, focus vào information hierarchy</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Material Design</h4>
+                                <p>Áp dụng Material Design 3 guidelines, color system và typography</p>
+                            </div>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Usability Testing</h4>
+                                <p>Test với giáo viên thực tế, iterate based on feedback</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Kết quả & Impact</h2>
+                    <div class="results-grid">
+                        <div class="result-card">
+                            <div class="result-number">5</div>
+                            <div class="result-label">Giáo viên pilot users</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-number">200+</div>
+                            <div class="result-label">Học sinh được quản lý</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-number">50%</div>
+                            <div class="result-label">Giảm thời gian quản lý</div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-number">4.8/5</div>
+                            <div class="result-label">User satisfaction score</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Công nghệ sử dụng</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h4>Core Development</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Flutter SDK</span>
+                                <span class="tech-tag">MVVM</span>
+                                <span class="tech-tag">LiveData</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>Database & Storage</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">Room Database</span>
+                                <span class="tech-tag">SharedPreferences</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-category">
+                            <h4>UI & Design</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Material Design 3</span>
+                                <span class="tech-tag">RecyclerView</span>
+                                <span class="tech-tag">Data Binding</span>
+                                <span class="tech-tag">Custom Views</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="project-navigation">
+                    <a href="sleep-sound.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Dự án trước
+                    </a>
+                    <a href="personal-finance.html" class="btn btn-primary">
+                        Dự án tiếp theo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Lưu Viết Công. All rights reserved.</p>
+                    </div>
+                    <div class="footer-slogan">
+                        <p>Designed with <i class="fas fa-heart"></i> for clean & modern mobile experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
