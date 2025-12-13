@@ -30,11 +30,12 @@
             <div class="project-detail-page">
                 <div class="project-hero">
                     <div class="project-meta">
-                        <span class="project-category">Android App</span>
+                        <span class="project-category">Flutter Mobile App</span>
                         <span class="project-status">Đang phát triển</span>
                     </div>
                     <h1>Student Manager</h1>
-                    <p class="project-tagline">Ứng dụng quản lý lớp học với kiến trúc MVVM và Material Design</p>
+                   <p class="project-tagline">Ứng dụng Flutter hỗ trợ quản lý lớp học và học sinh, được xây dựng nhằm rèn luyện tư duy tổ chức dữ liệu và kiến trúc ứng dụng mobile</p>
+
                 </div>
 
                 <div class="project-overview">
@@ -45,22 +46,24 @@
                         </div>
                         <div class="overview-item">
                             <h3>Vai trò</h3>
-                            <p>Android Developer & UI/UX Designer</p>
+                           <p>Flutter Developer & UI/UX Designer</p>
                         </div>
                         <div class="overview-item">
                             <h3>Công nghệ</h3>
-                            <p>Flutter, Flutter SDK, SQLite, MVVM</p>
+                           <p>Flutter, Flutter SDK, SQLite, MVVM (theo hướng ViewModel + Provider)</p>
                         </div>
                         <div class="overview-item">
                             <h3>Platform</h3>
-                            <p>Android</p>
+                           <p>Android (hướng tới mở rộng đa nền tảng)</p>
                         </div>
                     </div>
                 </div>
 
                 <section class="project-section">
                     <h2>Tổng quan dự án</h2>
-                    <p>Student Manager là ứng dụng Android giúp giáo viên quản lý thông tin học sinh, điểm số và theo dõi tiến độ học tập. Ứng dụng được xây dựng với kiến trúc MVVM clean architecture và tuân thủ Material Design guidelines.</p>
+                   <p>Student Manager là ứng dụng mobile được phát triển nhằm hỗ trợ giáo viên trong việc quản lý thông tin học sinh, lớp học và điểm số trên thiết bị di động.
+                        Dự án được thực hiện như một sản phẩm thực hành, tập trung vào việc tổ chức dữ liệu, xây dựng luồng sử dụng rõ ràng
+                        và áp dụng kiến trúc MVVM trong Flutter.</p>
                     
                     <div class="features-grid">
                         <div class="feature-card">
@@ -68,7 +71,8 @@
                                 <i class="fas fa-users"></i>
                             </div>
                             <h4>Quản lý học sinh</h4>
-                            <p>CRUD operations đầy đủ: thêm, sửa, xóa, tìm kiếm học sinh với validation</p>
+                            <p>Hỗ trợ thêm, chỉnh sửa và tìm kiếm thông tin học sinh, tập trung vào việc quản lý dữ liệu rõ ràng và dễ sử dụng.</p>
+
                         </div>
                         
                         <div class="feature-card">
@@ -76,7 +80,8 @@
                                 <i class="fas fa-chart-line"></i>
                             </div>
                             <h4>Quản lý điểm số</h4>
-                            <p>Nhập điểm theo môn học, tính điểm trung bình, xếp loại tự động</p>
+                           <p>Cho phép nhập và theo dõi điểm số theo môn học, hỗ trợ tổng hợp kết quả học tập cơ bản.</p>
+
                         </div>
                         
                         <div class="feature-card">
@@ -84,7 +89,7 @@
                                 <i class="fas fa-file-export"></i>
                             </div>
                             <h4>Báo cáo thống kê</h4>
-                            <p>Xuất báo cáo PDF, biểu đồ phân tích điểm số, thống kê theo lớp</p>
+                           <p>Hiển thị thống kê điểm số theo lớp và học sinh, hỗ trợ theo dõi tiến độ học tập.</p>
                         </div>
                         
                         <div class="feature-card">
@@ -102,20 +107,21 @@
                     
                     <div class="architecture-section">
                         <h4>MVVM Architecture</h4>
-                        <p>Áp dụng Model-View-ViewModel pattern để tách biệt business logic và UI, giúp code dễ test và maintain.</p>
+                        <p>Áp dụng mô hình MVVM nhằm tách biệt phần giao diện và logic xử lý, giúp code rõ ràng hơn và thuận tiện cho việc mở rộng trong quá trình học tập.</p>
+
                         
                         <div class="architecture-layers">
                             <div class="layer">
                                 <h5>View Layer</h5>
-                                <p>Activities, Fragments, Custom Views với Data Binding</p>
+                                <p>Flutter Widgets, Screens và Custom Components</p>
                             </div>
                             <div class="layer">
                                 <h5>ViewModel Layer</h5>
-                                <p>Business logic, state management với LiveData</p>
+                                <p>Business logic và state management sử dụng Provider</p>
                             </div>
                             <div class="layer">
                                 <h5>Model Layer</h5>
-                                <p>Repository pattern, SQLite database, Data Access Objects</p>
+                               <p>Repository pattern, SQLite local database và các data models</p>
                             </div>
                         </div>
                     </div>
@@ -127,22 +133,25 @@
                     <div class="challenge-solution">
                         <div class="challenge">
                             <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
-                            <p>Thiết kế database schema phức tạp cho quan hệ nhiều-nhiều giữa học sinh và môn học</p>
+                           <p>Thiết kế cấu trúc dữ liệu phù hợp để quản lý mối quan hệ giữa học sinh, lớp học và môn học.</p>
+
                         </div>
                         <div class="solution">
                             <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
-                            <p>Sử dụng junction table và foreign keys, implement DAO pattern với Room database</p>
+                           <p>Xây dựng các model dữ liệu rõ ràng và tổ chức luồng xử lý thông qua ViewModel để dễ quản lý và mở rộng chức năng.</p>
                         </div>
                     </div>
                     
                     <div class="challenge-solution">
                         <div class="challenge">
                             <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
-                            <p>Tối ưu performance cho RecyclerView với dataset lớn và complex layouts</p>
+                            <p>Quản lý hiệu năng khi hiển thị danh sách học sinh và điểm số với số lượng dữ liệu tăng dần.</p>
+
                         </div>
                         <div class="solution">
                             <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
-                            <p>Implement ViewHolder pattern, lazy loading, và DiffUtil for efficient updates</p>
+                           <p>Tối ưu widget tree, sử dụng ListView.builder và quản lý state hợp lý để đảm bảo trải nghiệm mượt mà.</p>
+
                         </div>
                     </div>
                 </section>
@@ -154,7 +163,8 @@
                             <div class="step-number">1</div>
                             <div class="step-content">
                                 <h4>User Research</h4>
-                                <p>Phỏng vấn giáo viên để hiểu workflow và pain points trong quản lý lớp học</p>
+                                <p>Thu thập ý kiến từ người dùng thử (giáo viên, sinh viên sư phạm) để hiểu nhu cầu quản lý lớp học.</p>
+
                             </div>
                         </div>
                         
@@ -162,7 +172,7 @@
                             <div class="step-number">2</div>
                             <div class="step-content">
                                 <h4>Wireframing</h4>
-                                <p>Tạo wireframes cho các màn hình chính, focus vào information hierarchy</p>
+                                <p>Tạo wireframes cho các màn hình chính, tập trung vào bố cục và luồng thông tin</p>
                             </div>
                         </div>
                         
@@ -178,14 +188,18 @@
                             <div class="step-number">4</div>
                             <div class="step-content">
                                 <h4>Usability Testing</h4>
-                                <p>Test với giáo viên thực tế, iterate based on feedback</p>
+                                <p>Kiểm thử giao diện với người dùng thử và điều chỉnh dựa trên phản hồi thu được.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="project-section">
-  <h2>Mục tiêu & Giá trị hướng tới</h2>
+ <h2>Mục tiêu & Định hướng phát triển</h2>
+ <p class="note-text" style="margin-top: 1rem; font-size: 0.95rem; color: #666;">
+Student Manager được phát triển với mục tiêu rèn luyện kỹ năng xây dựng ứng dụng Flutter hoàn chỉnh,
+từ tổ chức dữ liệu, kiến trúc code đến trải nghiệm người dùng.
+</p>
   <div class="results-grid">
     <div class="result-card">
       <div class="result-number">5+</div>
@@ -219,26 +233,26 @@
                                 <span class="tech-tag">Flutter</span>
                                 <span class="tech-tag">Flutter SDK</span>
                                 <span class="tech-tag">MVVM</span>
-                                <span class="tech-tag">LiveData</span>
+                                <span class="tech-tag">State Management (Provider)</span>
                             </div>
                         </div>
                         
                         <div class="tech-category">
                             <h4>Database & Storage</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">Room Database</span>
-                                <span class="tech-tag">SharedPreferences</span>
+                               <span class="tech-tag">SQLite</span>
+                               <span class="tech-tag">sqflite</span>
+                               <span class="tech-tag">Local Storage</span>
                             </div>
                         </div>
                         
                         <div class="tech-category">
                             <h4>UI & Design</h4>
                             <div class="tech-tags">
-                                <span class="tech-tag">Material Design 3</span>
-                                <span class="tech-tag">RecyclerView</span>
-                                <span class="tech-tag">Data Binding</span>
-                                <span class="tech-tag">Custom Views</span>
+                                <span class="tech-tag">Flutter Widgets</span>
+                                <span class="tech-tag">Material Design</span>
+                                <span class="tech-tag">Responsive Layout</span>
+
                             </div>
                         </div>
                     </div>

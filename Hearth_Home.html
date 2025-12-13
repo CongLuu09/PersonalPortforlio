@@ -34,7 +34,7 @@
             <span class="project-status">Hoàn thành</span>
           </div>
           <h1>Hearth Home</h1>
-          <p class="project-tagline">Ứng dụng thư giãn với âm thanh quen thuộc trong chính ngôi nhà của bạn</p>
+         <p class="project-tagline">Ứng dụng Android thư giãn, phát âm thanh đời thường hoàn toàn offline, được xây dựng tập trung vào trải nghiệm người dùng và hiệu năng local.</p>
         </div>
 
         <div class="project-overview">
@@ -57,10 +57,10 @@
         <section class="project-section">
           <h2>Tổng quan dự án</h2>
           <p>
-            Hearth Home là ứng dụng âm nhạc mang đến trải nghiệm thư giãn bằng cách tái hiện những âm thanh quen thuộc trong ngôi nhà: 
-            tiếng nước chảy trong phòng tắm, tiếng dao thớt trong bếp, tiếng ấm siêu nước, tiếng ghế kéo trong phòng ăn, 
-            hay tiếng lò sưởi và đồng hồ tích tắc trong phòng khách. Ứng dụng hướng đến việc khơi gợi cảm giác ấm áp, 
-            bình yên và gần gũi từ chính những điều giản dị hàng ngày.
+            Hearth Home là ứng dụng Android mang đến trải nghiệm thư giãn bằng cách tái hiện 
+            những âm thanh quen thuộc trong không gian sống hằng ngày như phòng bếp, phòng tắm 
+            hay phòng khách. Ứng dụng được thiết kế để hoạt động hoàn toàn offline, 
+            tập trung vào sự đơn giản, ổn định và cảm giác gần gũi cho người dùng.
           </p>
 
           <div class="features-grid">
@@ -72,8 +72,8 @@
 
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-music"></i></div>
-              <h4>Trình phát nhạc mượt mà</h4>
-              <p>Phát và dừng âm thanh ngay lập tức, không cần internet.</p>
+             <h4>Trình phát âm thanh offline</h4>
+             <p>Phát và dừng âm thanh ngay lập tức, không phụ thuộc kết nối internet.</p>
             </div>
 
             <div class="feature-card">
@@ -84,8 +84,8 @@
 
             <div class="feature-card">
               <div class="feature-icon"><i class="fas fa-palette"></i></div>
-              <h4>UI tối giản</h4>
-              <p>Thiết kế gọn gàng, dễ sử dụng, tập trung vào trải nghiệm thư giãn.</p>
+              <h4>UI tối giản, dễ sử dụng</h4>
+              <p>Thiết kế tập trung vào thao tác nhanh và trải nghiệm thư giãn, tránh gây xao nhãng.</p>
             </div>
           </div>
         </section>
@@ -99,8 +99,8 @@
             </div>
             <div class="solution">
               <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
-              <p>Tổ chức dữ liệu bằng SQLite cho thư viện âm thanh và SharedPreferences cho cấu hình người dùng, 
-              đảm bảo khởi chạy nhanh và tiết kiệm tài nguyên.</p>
+              <p>Tổ chức dữ liệu bằng SQLite cho thư viện âm thanh và sử dụng SharedPreferences cho các cấu hình đơn giản, giúp giảm truy vấn dư thừa, tối ưu thời gian khởi chạy 
+                 và đảm bảo ứng dụng hoạt động ổn định ngay cả trên thiết bị cấu hình thấp.</p>
             </div>
           </div>
 
@@ -117,51 +117,78 @@
         </section>
 
         <section class="project-section">
-          <h2>Kiến trúc & Công nghệ</h2>
-          <div class="tech-stack">
-            <div class="tech-category">
-              <h4>Frontend Mobile</h4>
-              <div class="tech-tags">
-                <span class="tech-tag">Android</span>
-                <span class="tech-tag">XML</span>
-              </div>
-            </div>
-            <div class="tech-category">
-              <h4>Database & Storage</h4>
-              <div class="tech-tags">
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">SharedPreferences</span>
-              </div>
-            </div>
-            <div class="tech-category">
-              <h4>Audio Playback</h4>
-              <div class="tech-tags">
-                <span class="tech-tag">MediaPlayer</span>
-                <span class="tech-tag">Offline Playback</span>
-              </div>
-            </div>
-          </div>
-        </section>
+  <h2>Kiến trúc & Công nghệ</h2>
+  <div class="tech-stack">
 
-        <section class="project-section">
-          <h2>Bài học kinh nghiệm</h2>
-          <div class="lessons-learned">
-            <div class="lesson-item">
-              <h4>Quản lý dữ liệu offline</h4>
-              <p>Trải nghiệm rõ rệt việc xây dựng ứng dụng chỉ dựa vào local storage, từ thiết kế schema SQLite đến tối ưu hiệu năng.</p>
-            </div>
+    <div class="tech-category">
+      <h4>Frontend Mobile</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Android</span>
+        <span class="tech-tag">XML</span>
+      </div>
+    </div>
 
-            <div class="lesson-item">
-              <h4>Thiết kế trải nghiệm người dùng</h4>
-              <p>Hiểu cách cân bằng giữa UI tối giản và cảm giác ấm áp, phù hợp với mục đích thư giãn.</p>
-            </div>
+    <div class="tech-category">
+      <h4>Database & Storage</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">SharedPreferences</span>
+      </div>
+    </div>
 
-            <div class="lesson-item">
-              <h4>Kỹ năng triển khai end-to-end</h4>
-              <p>Tự tay xây dựng toàn bộ ứng dụng từ kiến trúc, giao diện, đến xử lý âm thanh và lưu trữ dữ liệu.</p>
-            </div>
-          </div>
-        </section>
+    <div class="tech-category">
+      <h4>Audio Playback</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">MediaPlayer</span>
+        <span class="tech-tag">Offline Playback</span>
+      </div>
+    </div>
+    <div class="tech-category">
+      <h4>Architecture</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">MVVM (basic)</span>
+        <span class="tech-tag">Separation of Concerns</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+       <section class="project-section">
+  <h2>Bài học kinh nghiệm</h2>
+  <div class="lessons-learned">
+
+    <div class="lesson-item">
+      <h4>Quản lý dữ liệu offline</h4>
+      <p>
+        Nắm được cách thiết kế và quản lý dữ liệu local trong ứng dụng Android, 
+        từ xây dựng schema SQLite, tổ chức bảng dữ liệu đến tối ưu truy vấn 
+        nhằm đảm bảo hiệu năng và khả năng mở rộng.
+      </p>
+    </div>
+
+    <div class="lesson-item">
+      <h4>Thiết kế trải nghiệm người dùng</h4>
+      <p>
+        Học cách thiết kế UI tối giản nhưng có chủ đích, 
+        tập trung vào hành vi người dùng và mục tiêu sử dụng, 
+        thay vì chỉ chú trọng vào hình thức.
+      </p>
+    </div>
+
+    <div class="lesson-item">
+      <h4>Kỹ năng triển khai end-to-end</h4>
+      <p>
+        Rèn luyện khả năng triển khai một ứng dụng mobile hoàn chỉnh, 
+        từ tổ chức kiến trúc cơ bản, xây dựng giao diện, 
+        xử lý logic và âm thanh đến lưu trữ dữ liệu cục bộ.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
         <div class="project-navigation">
           <a href="index.html" class="btn btn-outline">

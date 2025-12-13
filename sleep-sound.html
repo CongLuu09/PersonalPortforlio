@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleep Sound - Chi tiết dự án | Lưu Viết Công</title>
+    <title>Sounds Relax - Chi tiết dự án | Lưu Viết Công</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,8 +33,8 @@
                         <span class="project-category">Android App</span>
                         <span class="project-status">Hoàn thành</span>
                     </div>
-                    <h1>Sleep Sound</h1>
-                    <p class="project-tagline">Ứng dụng thư giãn với âm thanh thiên nhiên và dashboard quản trị thông minh</p>
+                    <h1>Sounds Relax</h1>
+                   <p class="project-tagline"> Ứng dụng Android hỗ trợ thư giãn và cải thiện giấc ngủ, kết hợp dashboard web phục vụ quản lý nội dung và thống kê sử dụng</p>
                 </div>
 
                 <div class="project-overview">
@@ -45,12 +45,13 @@
                         </div>
                         <div class="overview-item">
                             <h3>Vai trò</h3>
-                            <p>Full-stack Mobile Developer</p>
+                           <p>Mobile Developer (Android)</p>
                         </div>
                         <div class="overview-item">
-                            <h3>Công nghệ</h3>
-                            <p>Android, MVVM, SQLite, Provider</p>
+                             <h3>Công nghệ</h3>
+                             <p>Android (Java), XML, MVVM, SQLite, SharedPreferences</p>
                         </div>
+
                         <div class="overview-item">
                             <h3>Android app</h3>
                             <p>Android </p>
@@ -60,7 +61,7 @@
 
                 <section class="project-section">
                     <h2>Tổng quan dự án</h2>
-                    <p>Sleep Sound là ứng dụng thư giãn giúp người dùng cải thiện chất lượng giấc ngủ thông qua âm thanh thiên nhiên và nhạc thư giãn. Dự án bao gồm cả ứng dụng mobile cho người dùng cuối và dashboard web để quản trị viên theo dõi thống kê sử dụng.</p>
+                    <p>Sounds Relax là ứng dụng thư giãn giúp người dùng cải thiện chất lượng giấc ngủ thông qua âm thanh thiên nhiên và nhạc thư giãn. Dự án bao gồm cả ứng dụng mobile cho người dùng cuối và dashboard web để quản trị viên theo dõi thống kê sử dụng.</p>
                     
                     <div class="features-grid">
                         <div class="feature-card">
@@ -107,14 +108,15 @@
                         </div>
                         <div class="solution">
                             <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
-                            <p>Implement audio caching, background processing với isolates, và optimize memory usage</p>
+                           <p>Sử dụng audio caching cục bộ, kết hợp Service chạy nền và quản lý vòng đời MediaPlayerđể đảm bảo phát âm thanh mượt mà, giảm giật lag và hạn chế tiêu thụ pin.</p>
                         </div>
                     </div>
                     
                     <div class="challenge-solution">
                         <div class="challenge">
                             <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
-                            <p>Đồng bộ dữ liệu giữa mobile app và web dashboard real-time</p>
+                            <p>Đồng bộ dữ liệu giữa mobile app và dashboard web thông qua REST API,hỗ trợ cập nhật nội dung và thống kê hành vi sử dụng theo từng phiên.</p>
+
                         </div>
                         <div class="solution">
                             <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
@@ -124,67 +126,78 @@
                 </section>
 
                 <section class="project-section">
-                    <h2>Kiến trúc & Công nghệ</h2>
-                    <div class="tech-stack">
-                        <div class="tech-category">
-                            <h4>Frontend Mobile</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Android</span>
-                                <span class="tech-tag">XML</span>
-                                <span class="tech-tag">Provider</span>
-                                <span class="tech-tag">SharedPreferences</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>Backend & API</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">REST API</span>
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">Type Script</span>
-                            </div>
-                        </div>
-                        <div class="tech-category">
-                            <h4>Database & Storage</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">Local Storage</span>
-                                <span class="tech-tag">File System</span>
-                            </div>
-                        </div>
-                        
-                        <div class="tech-category">
-                            <h4>Audio Processing</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">audioplayers</span>
-                                <span class="tech-tag">Background Audio</span>
-                                <span class="tech-tag">Audio Caching</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+  <h2>Kiến trúc & Công nghệ</h2>
+  <div class="tech-stack">
+
+    <div class="tech-category">
+      <h4>Mobile Application</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">Android</span>
+        <span class="tech-tag">XML</span>
+        <span class="tech-tag">MVVM</span>
+        <span class="tech-tag">SharedPreferences</span>
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>API Integration & Data Flow</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">REST API</span>
+        <span class="tech-tag">JSON</span>
+        <span class="tech-tag">Client–Server Communication</span>
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>Local Data & Storage</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">SQLite</span>
+        <span class="tech-tag">Local Storage</span>
+        <span class="tech-tag">File System</span>
+      </div>
+    </div>
+
+    <div class="tech-category">
+      <h4>Audio Handling</h4>
+      <div class="tech-tags">
+        <span class="tech-tag">MediaPlayer / AudioPlayer</span>
+        <span class="tech-tag">Background Audio</span>
+        <span class="tech-tag">Audio Caching</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
                <section class="project-section">
-  <h2>Mục tiêu ban đầu</h2>
-  <div class="results-grid">
-    <div class="result-card">
-      <div class="result-number">500+</div>
-      <div class="result-label">Lượt tải dự kiến trong tháng đầu</div>
-    </div>
-    <div class="result-card">
-      <div class="result-number">4.5★</div>
-      <div class="result-label">Mục tiêu rating người dùng</div>
-    </div>
-    <div class="result-card">
-      <div class="result-number">70%</div>
-      <div class="result-label">Tỷ lệ giữ chân người dùng kỳ vọng</div>
-    </div>
-    <div class="result-card">
-      <div class="result-number">30 phút</div>
-      <div class="result-label">Thời gian sử dụng trung bình mong muốn</div>
-    </div>
+ <h2>Mục tiêu ban đầu</h2>
+<div class="results-grid">
+  <div class="result-card">
+    <div class="result-number">~500</div>
+    <div class="result-label">Lượt tải mục tiêu trong giai đoạn ra mắt</div>
   </div>
+  <div class="result-card">
+    <div class="result-number">≥ 4.0★</div>
+    <div class="result-label">Mức đánh giá mong muốn từ người dùng</div>
+  </div>
+  <div class="result-card">
+    <div class="result-number">60–70%</div>
+    <div class="result-label">Tỷ lệ giữ chân người dùng dự kiến</div>
+  </div>
+  <div class="result-card">
+    <div class="result-number">20–30 phút</div>
+    <div class="result-label">Thời gian sử dụng trung bình kỳ vọng</div>
+  </div>
+</div>
+
+<p class="note-text" style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
+* Các chỉ số trên được đặt ra trong giai đoạn thiết kế sản phẩm nhằm định hướng
+phát triển tính năng và trải nghiệm người dùng, không phải số liệu thống kê thực tế.
+</p>
+
   <p class="note-text" style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
-    * Ứng dụng hiện đang chờ duyệt trên Google Play
+    * Ứng dụng hiện đã có trên Google Play
   </p>
 </section>
 
@@ -194,7 +207,9 @@
                     <div class="lessons-learned">
                         <div class="lesson-item">
                             <h4>Performance Optimization</h4>
-                            <p>Học được cách optimize audio streaming và memory management trong Flutter, đặc biệt quan trọng cho ứng dụng chạy background lâu dài.</p>
+                            <p>
+                              Học được cách tối ưu audio playback và quản lý bộ nhớ trong Android,
+                               đặc biệt với các use case phát âm thanh nền trong thời gian dài.</p>
                         </div>
                         
                         <div class="lesson-item">
