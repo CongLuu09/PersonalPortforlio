@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartNote - Chi tiết dự án | Lưu Viết Công</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #10b981;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --background-alt: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    --transition-base: 0.3s ease;
+}
+
+.project-detail-page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-category,
+.project-status {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.project-category {
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+}
+
+.project-status {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--secondary-color);
+}
+
+.project-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.project-tagline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project-overview {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 3rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.overview-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.overview-item p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.project-section {
+    margin-bottom: 3rem;
+}
+
+.project-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+.project-section > p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.challenge-solution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.challenge, .solution {
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.challenge {
+    background: rgba(239, 68, 68, 0.05);
+    border-left: 4px solid #ef4444;
+}
+
+.solution {
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid #10b981;
+}
+
+.tech-stack {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.tech-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background: var(--background-alt);
+    border: 1px solid var(--border-color);
+    font-size: 0.85rem;
+}
+
+.lessons-learned {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.lesson-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.project-navigation {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .challenge-solution {
+        grid-template-columns: 1fr;
+    }
+    .project-navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<header class="header scrolled">
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <h1>Lưu Viết Công</h1>
+        <span class="logo-subtitle">Mobile Developer</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">← Về trang chủ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main style="padding-top:100px;">
+  <div class="container">
+    <div class="project-detail-page">
+
+      <!-- Hero -->
+      <div class="project-hero">
+        <div class="project-meta">
+          <span class="project-category">Android App</span>
+          <span class="project-status">Đã phát hành</span>
+        </div>
+        <h1>SmartNote</h1>
+        <p class="project-tagline">
+          Ứng dụng ghi chú Android tối giản, tập trung vào tốc độ, hiệu quả và quyền riêng tư của người dùng.
+        </p>
+      </div>
+
+      <!-- Overview -->
+      <div class="project-overview">
+        <div class="overview-grid">
+          <div class="overview-item">
+            <h3>Thời gian</h3>
+            <p>Tháng 6/2025 – Tháng 9/2025</p>
+          </div>
+          <div class="overview-item">
+            <h3>Vai trò</h3>
+            <p>Android Developer (Solo)</p>
+          </div>
+          <div class="overview-item">
+            <h3>Công nghệ</h3>
+            <p>Android, Java, SQLite, Material Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tổng quan dự án -->
+      <section class="project-section">
+        <h2>Tổng quan dự án</h2>
+        <p>
+          SmartNote là ứng dụng ghi chú được thiết kế để phục vụ nhu cầu ghi chép hàng ngày
+          cho sinh viên, nhân viên văn phòng và người dùng cá nhân.
+          Ứng dụng tập trung vào trải nghiệm nhanh – gọn – dễ dùng,
+          giúp người dùng ghi lại ý tưởng, công việc và thông tin quan trọng
+          mà không bị phân tâm bởi các tính năng phức tạp.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <h4>Tạo & chỉnh sửa nhanh</h4>
+            <p>Tạo, chỉnh sửa và lưu ghi chú tức thì với giao diện đơn giản và phản hồi nhanh.</p>
+          </div>
+
+          <div class="feature-card">
+            <h4>Phân loại bằng thẻ (Tags)</h4>
+            <p>Sắp xếp ghi chú khoa học thông qua hệ thống thẻ giúp tìm kiếm dễ dàng.</p>
+          </div>
+
+          <div class="feature-card">
+            <h4>Tìm kiếm thông minh</h4>
+            <p>Tìm ghi chú theo tiêu đề hoặc nội dung chỉ trong vài thao tác.</p>
+          </div>
+
+          <div class="feature-card">
+            <h4>Hoạt động offline</h4>
+            <p>Dữ liệu được lưu cục bộ, đảm bảo sử dụng mọi lúc không cần Internet.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Thách thức & Giải pháp -->
+      <section class="project-section">
+        <h2>Thách thức & Giải pháp</h2>
+
+        <div class="challenge-solution">
+          <div class="challenge">
+            <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
+            <p>
+              Làm sao để ứng dụng ghi chú vừa đơn giản cho người dùng mới,
+              vừa đủ linh hoạt để quản lý số lượng ghi chú lớn.
+            </p>
+          </div>
+          <div class="solution">
+            <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
+            <p>
+              Thiết kế UI tối giản, kết hợp hệ thống tag và tìm kiếm nhanh
+              giúp người dùng dễ dàng quản lý nội dung.
+            </p>
+          </div>
+        </div>
+
+        <div class="challenge-solution">
+          <div class="challenge">
+            <h4><i class="fas fa-exclamation-triangle"></i> Thách thức</h4>
+            <p>
+              Đảm bảo dữ liệu an toàn và riêng tư mà không phụ thuộc backend.
+            </p>
+          </div>
+          <div class="solution">
+            <h4><i class="fas fa-lightbulb"></i> Giải pháp</h4>
+            <p>
+              Lưu trữ hoàn toàn bằng SQLite cục bộ,
+              không thu thập dữ liệu người dùng và không yêu cầu quyền dư thừa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kiến trúc & Công nghệ -->
+      <section class="project-section">
+        <h2>Kiến trúc & Công nghệ</h2>
+        <div class="tech-stack">
+          <div class="tech-category">
+            <h4>Mobile Frontend</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">XML</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Database</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>Architecture</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">MVC / Simple MV Pattern</span>
+              <span class="tech-tag">Separation of Concerns</span>
+            </div>
+          </div>
+
+          <div class="tech-category">
+            <h4>UI / UX</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">Material Design</span>
+              <span class="tech-tag">Minimal UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bài học kinh nghiệm -->
+      <section class="project-section">
+        <h2>Bài học kinh nghiệm</h2>
+        <div class="lessons-learned">
+          <div class="lesson-item">
+            <h4>Thiết kế sản phẩm tối giản</h4>
+            <p>Ít tính năng nhưng đúng trọng tâm giúp tăng trải nghiệm và giữ chân người dùng.</p>
+          </div>
+
+          <div class="lesson-item">
+            <h4>Quản lý dữ liệu cục bộ</h4>
+            <p>Tối ưu SQLite giúp ứng dụng nhẹ, nhanh và ổn định trên nhiều thiết bị.</p>
+          </div>
+
+          <div class="lesson-item">
+            <h4>Tư duy sản phẩm</h4>
+            <p>Xây dựng ứng dụng hướng tới người dùng cuối, không chỉ là hoàn thành chức năng.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation -->
+      <div class="project-navigation">
+        <a href="index.html" class="btn btn-outline">
+          <i class="fas fa-arrow-left"></i> Về trang chủ
+        </a>
+        <a href="hearth_home.html" class="btn btn-primary">
+          Dự án tiếp theo <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2025 Lưu Viết Công. All rights reserved.</p>
+        </div>
+        <div class="footer-slogan">
+          <p>Designed with <i class="fas fa-heart"></i> for clean & modern mobile experiences.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1189,6 +1189,13 @@ section {
   width: 0;
 }
 
+.skill-svg {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
 /* Contact Section */
 .contact-content {
   display: grid;
