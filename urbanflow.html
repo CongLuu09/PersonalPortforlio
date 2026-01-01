@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanFlow – Sound of the City | Lưu Viết Công</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #10b981;
+      --text-primary: #111827;
+      --text-secondary: #6b7280;
+      --background-alt: #f9fafb;
+      --border-color: #e5e7eb;
+      --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .project-detail-page { max-width: 900px; margin: 0 auto; }
+    .project-hero { text-align: center; margin-bottom: 3rem; padding: 2rem 0; }
+    .project-meta { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+
+    .project-category,
+    .project-status {
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .project-category {
+      background: rgba(37, 99, 235, 0.1);
+      color: var(--primary-color);
+    }
+
+    .project-status {
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--secondary-color);
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .project-tagline {
+      font-size: 1.2rem;
+      color: var(--text-secondary);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .project-overview {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 3rem;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .overview-item h3 {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.4rem;
+    }
+
+    .overview-item p,
+    .overview-item a {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .project-section { margin-bottom: 3rem; }
+    .project-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .challenge-solution {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .challenge, .solution {
+      padding: 1rem;
+      border-radius: 0.75rem;
+    }
+
+    .challenge {
+      background: rgba(239,68,68,0.05);
+      border-left: 4px solid #ef4444;
+    }
+
+    .solution {
+      background: rgba(16,185,129,0.05);
+      border-left: 4px solid #10b981;
+    }
+
+    .tech-category, .lesson-item {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tech-tag {
+      background: var(--background-alt);
+      padding: 0.4rem 0.9rem;
+      border-radius: 1rem;
+      font-size: 0.85rem;
+      border: 1px solid var(--border-color);
+    }
+
+    .project-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+      .challenge-solution { grid-template-columns: 1fr; }
+      .project-navigation { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header scrolled">
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <h1>Lưu Viết Công</h1>
+        <span class="logo-subtitle">Mobile Developer</span>
+      </div>
+      <nav>
+        <a href="index.html">← Về trang chủ</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main style="padding-top:100px">
+  <div class="container">
+    <div class="project-detail-page">
+
+      <div class="project-hero">
+        <div class="project-meta">
+          <span class="project-category">Android App</span>
+          <span class="project-status">Hoàn thành</span>
+        </div>
+        <h1>UrbanFlow – Sound of the City</h1>
+        <p class="project-tagline">
+          Ứng dụng âm thanh đô thị tái hiện nhịp sống thành phố thông qua những bản ghi chân thực,
+          giúp người dùng thư giãn, tập trung và kết nối với không gian xung quanh.
+        </p>
+      </div>
+
+      <div class="project-overview">
+        <div class="overview-grid">
+          <div class="overview-item">
+            <h3>Thời gian</h3>
+            <p>10/2025 – 11/2025</p>
+          </div>
+          <div class="overview-item">
+            <h3>Vai trò</h3>
+            <p>Android Developer</p>
+          </div>
+          <div class="overview-item">
+            <h3>Phát hành</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.kenhtao.site.urbanflowsoundofthecity" target="_blank">
+              Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-section">
+        <h2>Tổng quan dự án</h2>
+        <p>
+          UrbanFlow được xây dựng với triết lý “âm thanh thật – trải nghiệm thật”.
+          Ứng dụng không sử dụng hiệu ứng nhân tạo hay vòng lặp giả,
+          mà tập trung vào các bản ghi âm trực tiếp từ đời sống đô thị như quán cà phê,
+          đường phố, giao thông và thành phố về đêm.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2>Tính năng chính</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h4>Âm thanh đô thị chân thực</h4>
+            <p>Ghi âm trực tiếp từ môi trường thật, giữ nguyên nhịp điệu tự nhiên.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Offline-first</h4>
+            <p>Hoạt động hoàn toàn không cần internet, đảm bảo riêng tư.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Phân loại theo ngữ cảnh</h4>
+            <p>7 bộ sưu tập âm thanh đại diện cho các lát cắt đô thị.</p>
+          </div>
+          <div class="feature-card">
+            <h4>UI tối giản</h4>
+            <p>Thiết kế tập trung vào trải nghiệm nghe, không gây xao nhãng.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Thách thức & Giải pháp</h2>
+
+        <div class="challenge-solution">
+          <div class="challenge">
+            <h4>Thách thức</h4>
+            <p>Quản lý nhiều audio dài nhưng vẫn đảm bảo hiệu năng.</p>
+          </div>
+          <div class="solution">
+            <h4>Giải pháp</h4>
+            <p>Tối ưu vòng đời MediaPlayer, preload hợp lý và giải phóng tài nguyên đúng lúc.</p>
+          </div>
+        </div>
+
+        <div class="challenge-solution">
+          <div class="challenge">
+            <h4>Thách thức</h4>
+            <p>Giữ trải nghiệm thư giãn, không gây “ồn” về mặt giao diện.</p>
+          </div>
+          <div class="solution">
+            <h4>Giải pháp</h4>
+            <p>Thiết kế UI tối giản, animation nhẹ, ưu tiên nội dung âm thanh.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Kiến trúc & Công nghệ</h2>
+        <div class="tech-stack">
+          <div class="tech-category">
+            <h4>Frontend</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">XML</span>
+            </div>
+          </div>
+          <div class="tech-category">
+            <h4>Storage</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">SharedPreferences</span>
+            </div>
+          </div>
+          <div class="tech-category">
+            <h4>Audio</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">MediaPlayer</span>
+              <span class="tech-tag">Offline Playback</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-section">
+        <h2>Bài học kinh nghiệm</h2>
+        <div class="lesson-item">
+          <p>
+            Dự án giúp tôi hiểu sâu hơn về quản lý audio local,
+            tối ưu hiệu năng thiết bị thấp và thiết kế trải nghiệm người dùng
+            tập trung vào giá trị cốt lõi của sản phẩm.
+          </p>
+        </div>
+      </section>
+
+      <div class="project-navigation">
+        <a href="keynote.html" class="btn btn-outline">
+          <i class="fas fa-arrow-left"></i>
+          Dự án trước
+        </a>
+        <a href="smartnote.html" class="btn btn-primary">
+          Dự án tiếp theo
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
